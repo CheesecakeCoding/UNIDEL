@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\WebApplication2\\WebApplication2\\UniDelWebApplication.csproj": {}
+    "C:\\Users\\HP\\Documents\\School Work\\2020\\COS 301\\Capstone Project\\Code\\UNIDEL\\web-application\\UniDelWebApplication\\WebApplication2\\UniDelWebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\WebApplication2\\WebApplication2\\UniDelWebApplication.csproj": {
+    "C:\\Users\\HP\\Documents\\School Work\\2020\\COS 301\\Capstone Project\\Code\\UNIDEL\\web-application\\UniDelWebApplication\\WebApplication2\\UniDelWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\WebApplication2\\WebApplication2\\UniDelWebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\School Work\\2020\\COS 301\\Capstone Project\\Code\\UNIDEL\\web-application\\UniDelWebApplication\\WebApplication2\\UniDelWebApplication.csproj",
         "projectName": "UniDelWebApplication",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\WebApplication2\\WebApplication2\\UniDelWebApplication.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\School Work\\2020\\COS 301\\Capstone Project\\Code\\UNIDEL\\web-application\\UniDelWebApplication\\WebApplication2\\UniDelWebApplication.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\WebApplication2\\WebApplication2\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\School Work\\2020\\COS 301\\Capstone Project\\Code\\UNIDEL\\web-application\\UniDelWebApplication\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
