@@ -21,6 +21,8 @@ UniDel is a unified delivery tracking system that supports fleet management. The
 ### Khakhu Ramakuela
 https://u17283818.github.io./
 ### William Tandwe
+https://williamtandweup.github.io/online-cv/
+I am a versatile programmer who is fluent in C++, Java, C#, PHP, and SQL.
 ### Marlene Viljoen
 
 
