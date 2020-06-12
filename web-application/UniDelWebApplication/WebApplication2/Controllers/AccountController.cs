@@ -14,12 +14,12 @@ namespace UniDelWebApplication.Controllers
     //TO CREATE A CONTROLLER RIGHT CLICK ON THE 'Controllers' FOLDER, SCROLL TO ADD, SELECT CONTROLLER, MVC CONTROLLER - EMPTY, GIVE IT AN APPROPRIATE NAME + 'Controller' e.g CourierCompanyController.cs
 
     //IDK BUT I FEEL LIKE WE CAN KEEP THIS CONTROLLER AND USE IT AS THE HUB OF OUR WEB APPLICATION
-    public class HomeController : Controller
+    public class AccountController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UniDelDbContext uniDelDb; //EVERY CONTROLLER IN OUR PROJECT SHOULD INCLUDE THIS TO HAVE ACCESS TO THE DATABASE
 
-        public HomeController(ILogger<HomeController> logger, UniDelDbContext db)
+        public AccountController(ILogger<HomeController> logger, UniDelDbContext db)
         {
             _logger = logger;
             uniDelDb = db;
@@ -73,6 +73,16 @@ namespace UniDelWebApplication.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        public IActionResult EmployeeReg()
+        {
+            return View();
+        }
+
         //THIS VIEW IS ACCESSIBLE BY TYPING IN http://localhost/Home/Privacy/
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -80,6 +90,6 @@ namespace UniDelWebApplication.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        
+
     }
 }
