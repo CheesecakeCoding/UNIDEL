@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Capture Service";
+}
+
+<div class="text-center">
+    <h1 class="display-4">CaptureService</h1>
+</div>
+
+@using (Html.BeginForm("Capture", "FleetManagement", FormMethod.Post))
+{
+    <label for="sortV">Sort by:</label>
+    <select name="sortV" id="sortV">
+        @foreach (var item in Model)
+        {
+            <option>
+                <td>@item.VehicleID</td>
+                <td>@item.VehicleVIN</td>
+            </option>
+        }
+        <option value="vId">ID</option>
+        <option value="vMake">Make</option>
+        <option value="vModel">Model</option>
+        <option value="vVIN">VIN</option>
+        <option value="vMileage">Mileage</option>
+        <option value="vLicensePlate">License Plate</option>
+        <option value="vLicenseDiskExpiry">License Disk Expiry</option>
+        <option value="vLastService">Last Service</option>
+        <option value="vNextMileageService">Next Mileage Service</option>
+        <option value="vNextDateService">Next Date Service</option>
+    </select>
+    <input type="date" id="start" name="trip-start"
+           value="2018-07-22"
+           min="2018-01-01" max="2018-12-31">
+    <input type="submit" value="Capture Service">
+}
