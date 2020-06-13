@@ -1,7 +1,81 @@
 ﻿@{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Information";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Edit</h1>
-</div>
+
+@using UniDelWebApplication.Models
+@model Vehicle
+
+<h1>Vehicle Information</h1>
+
+<form>
+    <div class="form-group row">
+        <label for="vehicle_id" class="col-sm-2 col-form-label">Vehicle ID</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_id" value=@Html.DisplayFor(m => m.VehicleID)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_make" class="col-sm-2 col-form-label">Vehicle make</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_make" value=@Html.DisplayFor(m => m.VehicleMake)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_model" class="col-sm-2 col-form-label">Vehicle model</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_model" value=@Html.DisplayFor(m => m.VehicleModel)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_license_plate" class="col-sm-2 col-form-label">Vehicle license plate</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_license_plate" value=@Html.DisplayFor(m => m.VehicleLicensePlate)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_vin" class="col-sm-2 col-form-label">Vehicle VIN</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_vin" value=@Html.DisplayFor(m => m.VehicleVIN)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_mileage" class="col-sm-2 col-form-label">Vehicle mileage</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicleMileage" value=@Html.DisplayFor(m => m.VehicleMileage)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_nextMileage" class="col-sm-2 col-form-label">Vehicle next mileageservice</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_nextMileage" value=@Html.DisplayFor(m => m.VehicleNextMileageService)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_licenseExpiry" class="col-sm-2 col-form-label">Vehicle license disk expiry</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_licenseExpiry" value=@Html.DisplayFor(m => m.VehicleLicenseDiskExpiry)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_lastService" class="col-sm-2 col-form-label">Vehicle last service</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_lastService" value=@Html.DisplayFor(m => m.VehicleLastService)>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="vehicle_next_service" class="col-sm-2 col-form-label">Vehicle next service</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="vehicle_nextService" value=@Html.DisplayFor(m => m.VehicleNextDateService)>
+        </div>
+    </div>
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="checkbox">
+        <label class="form-check-label" for="checkbox">Edit vehicle info</label>
+    </div>
+    <!--uf checkbox is checked then inputs will turn off of read only and can change values-->
+    <div>
+        <button type="button" class="btn btn-light">Submit</button>
+    </div>
+</form>

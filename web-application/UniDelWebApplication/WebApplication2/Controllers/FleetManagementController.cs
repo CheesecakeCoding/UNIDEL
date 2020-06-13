@@ -88,13 +88,18 @@ namespace UniDelWebApplication.Controllers
 
         public IActionResult Edit()
         {
+            //page to edit any other vehicle details
             return View();
         }
 
-        public IActionResult delete()
+        public IActionResult Delete()
         {
-            return View();
-        }
+            //code to remove vehicle from system
 
+
+
+            //redirect back to index page after deleting vehicle
+            return new RedirectToPageResult("Index");
+        }
     }
 }
